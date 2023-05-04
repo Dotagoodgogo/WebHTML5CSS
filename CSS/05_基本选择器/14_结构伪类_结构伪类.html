@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 选中div第一个儿子元素p */
+        /* div>p:first-child {
+            color: red;
+        } */
+
+        /* div>p:last-child {
+            color: green;
+        } */
+
+
+        div>p:nth-child(3) {
+            color: red;
+        }
+
+
+        /* div>p:nth-child(2n) {
+            color: red;
+        } */
+
+        div>p:nth-child(-n+5) {
+            color: red;
+        }
+
+
+        div>p:first-of-type {
+            color: green;
+        }
+
+        div>p:nth-of-type(3) {
+            color: green;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三:98</p>
+        <p>张四:92</p>
+        <p>张五:90</p>
+        <p>张六:87</p>
+        <p>张七:84</p>
+        <p>张八:72</p>
+    </div> -->
+
+
+    <!-- 结构二 -->
+
+    <!-- <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+    </div> -->
+
+     <div>
+        <span>测试2</span>
+        <p>张三:98</p>
+        <p>张四:92</p>
+        <p>张五:90</p>
+        <p>张六:87</p>
+        <p>张七:84</p>
+        <p>张八:72</p>
+    </div>
+</body>
+</html>

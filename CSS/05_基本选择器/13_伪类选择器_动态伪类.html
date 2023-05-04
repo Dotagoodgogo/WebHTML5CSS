@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 顺序不能变 */
+        /* 没有访问过的a */
+        a:link {
+            color: red;
+
+        }
+        /* 访问过的 */
+        a:visited {
+            color:orange;
+        }
+        /* 鼠标悬浮状态的a元素 */
+        a:hover {
+            color:skyblue;
+        }
+        /* 按下鼠标不悬浮a元素 */
+        a:active {
+            color: green;
+        }
+
+        span:hover {
+            color:green;
+        }
+
+        span:active {
+            color:red;
+        }
+        /* 获取焦点类似于正在输入 表单类元素 */
+
+        input:focus,select:focus {
+            color: orange;
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <span>尚硅谷</span>
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+    <br>
+    <input type="text">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div>p:not(.fail) {
+            color: red;
+        }
+
+        div>p:not([title^="你要"]) {
+            color: red;
+        }
+
+        div>p:not(:first-child) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>张三:98</p>
+        <p>张四:92</p>
+        <p>张五:90</p>
+        <p>张六:87</p>
+        <p class="fail" title="你要加油啊">张七:24</p>
+        <p class="fail" title="你要加油啊">张八:32</p>
+    </div>
+</body>
+</html>

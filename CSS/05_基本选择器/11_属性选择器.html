@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟选择器</title>
+    <style>
+        /* title属性标签 */
+        [title] {
+            color: red;
+        }
+
+        [title="atguigu2"] {
+            color: green;
+        }
+
+        /* 以a开头的属性标签 */
+        [title^="a"] {
+            color: blue;
+        }
+
+        /* 以1结尾的属性标签 */
+        [title$="1"] {
+            color: skyblue;
+        }
+        /* 选中所有包含4的 */
+        [title*="4"] {
+            color: skyblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div title="atguigu1">尚硅谷1</div>
+    <div title="atguigu2">尚硅谷2</div>
+    <div title="atguigu3">尚硅谷3</div>
+    <div title="atguigu4">尚硅谷4</div>
+    <div title="atguigu5">尚硅谷5</div>
+</body>
+</html>

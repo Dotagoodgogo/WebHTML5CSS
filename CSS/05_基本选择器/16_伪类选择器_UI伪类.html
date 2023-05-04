@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI伪类</title>
+    <style>
+        input:checked {
+            width: 100px;
+            height:50px;
+        }
+        /* 选中的被禁用的 */
+        input:disabled {
+            background-color: gray;
+        }
+
+        input:enabled {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="checkbox">
+        <input type="radio" name="gender">
+        <input type="radio" name="gender">
+        <input type="text">
+        <input type="text" disabled>
+    </div>
+</body>
+</html>
